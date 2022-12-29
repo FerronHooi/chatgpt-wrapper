@@ -34,7 +34,7 @@ class ChatGPT:
     eof_div_id = "chatgpt-wrapper-conversation-stream-data-eof"
     session_div_id = "chatgpt-wrapper-session-data"
 
-    def __init__(self, headless: bool = True, browser = "chrome"):
+    def __init__(self, headless: bool = True, browser = "chromium"):
         self.play = sync_playwright().start()
 
         try:
